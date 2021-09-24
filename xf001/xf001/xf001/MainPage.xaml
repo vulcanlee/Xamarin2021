@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xf001.MainPage">
+
+    <StackLayout>
+        <Entry
+            x:Name="EntryName"/>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label Text="你好"
+                   Margin="0,0,20,0"/>
+            <Label
+                x:Name="LabelName"/>
+        </StackLayout>
+        <Button Text="問安"
+                x:Name="BtnHello"/>
+    </StackLayout>
+
+</ContentPage>
