@@ -12,7 +12,6 @@ namespace xf003
         // 宣告要進行 資料 綁定的來源物件
         // 使用 .NET 含有支援欄位的屬性 設計要綁定的屬性
         private string name;
-
         public string Name
         {
             get { return name; }
@@ -29,7 +28,6 @@ namespace xf003
         // 宣告要進行 資料 綁定的來源物件
         // 使用 .NET 含有支援欄位的屬性 設計要綁定的屬性
         private string helloName;
-
         public string HelloName
         {
             get { return helloName; }
@@ -53,13 +51,10 @@ namespace xf003
         private void OnHelloCommand(object obj)
         {
             Console.WriteLine($"Name={Name}");
-            // 理論上，底下敘述執行完成後，綁定 HelloName 的 UI 將會進行更新
-            // 但是，為什麼沒有生效呢？
             HelloName = Name;
         }
 
         #region 實作關於 INotifyPropertyChanged 的方法
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         void OnPropertyChanged(string propertyName)
