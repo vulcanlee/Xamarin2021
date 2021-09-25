@@ -8,7 +8,7 @@
 |xf004|修正 INotifyPropertyChanged 程式碼||
 |xf005|使用 Prism 提供的 BindableBase 類別||
 |xf006|使用 PropertyChanged.Fody 套件||
-|xf007|||
+|xf007|Blazor 資料綁定運作說明||
 |xf008|||
 |xf009|||
 |xf010|||
