@@ -5,7 +5,7 @@
 |xf001|設計第一個 Hello World 應用程式 – 使用 Code-behind||
 |xf002|資料綁定沒有生效的練習||
 |xf003|自行建置 INotifyPropertyChanged||
-|xf004|||
+|xf004|修正 INotifyPropertyChanged 程式碼||
 |xf005|||
 |xf006|||
 |xf007|||

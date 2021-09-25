@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xf003.MainPage"
+             xmlns:local="clr-namespace:xf003">
+
+    <!--若沒有這裡的宣告，Data Binding 一定不會成功-->
+    <ContentPage.BindingContext>
+        <!--設定這個頁面的資料綁定來源為 MainPageViewModel 物件-->
+        <local:MainPageViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <!--這裡宣告進行 資料 綁定，將 Text 屬性綁定到 ViewModel 內的 Name 屬性-->
+        <Entry Text="{Binding Name}"/>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label Text="你好"
+                   Margin="0,0,20,0"/>
+            <!--這裡宣告進行 資料 綁定，將 Text 屬性綁定到 ViewModel 內的 HelloName 屬性-->
+            <Label Text="{Binding HelloName}"/>
+        </StackLayout>
+        <!--這裡宣告進行 命令 綁定，將 Command 屬性綁定到 ViewModel 內型別為 ICommand 的 HelloCommand 屬性-->
+        <Button Text="問安" 
+                Command="{Binding HelloCommand}"/>
+    </StackLayout>
+
+</ContentPage>
