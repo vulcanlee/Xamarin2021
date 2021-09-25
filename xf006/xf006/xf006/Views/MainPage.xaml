@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xf006.Views.MainPage"
+             Title="使用 Prism 提供的 BindableBase 類別">
+
+    <!--這裡不再需要指定 BindingContext 要綁定的物件，因為 Prism 會幫你處理掉-->
+
+    <StackLayout>
+        <!--這裡宣告進行 資料 綁定，將 Text 屬性綁定到 ViewModel 內的 Name 屬性-->
+        <Entry Text="{Binding Name}"/>
+        <StackLayout
+            Orientation="Horizontal">
+            <Label Text="你好"
+                   Margin="0,0,20,0"/>
+            <!--這裡宣告進行 資料 綁定，將 Text 屬性綁定到 ViewModel 內的 HelloName 屬性-->
+            <Label Text="{Binding HelloName}"/>
+        </StackLayout>
+        <!--這裡宣告進行 命令 綁定，將 Command 屬性綁定到 ViewModel 內型別為 ICommand 的 HelloCommand 屬性-->
+        <Button Text="問安" 
+                Command="{Binding HelloCommand}"/>
+    </StackLayout>
+
+</ContentPage>

@@ -6,8 +6,8 @@
 |xf002|資料綁定沒有生效的練習||
 |xf003|自行建置 INotifyPropertyChanged||
 |xf004|修正 INotifyPropertyChanged 程式碼||
-|xf005|||
-|xf006|||
+|xf005|使用 Prism 提供的 BindableBase 類別||
+|xf006|使用 PropertyChanged.Fody 套件||
 |xf007|||
 |xf008|||
 |xf009|||
